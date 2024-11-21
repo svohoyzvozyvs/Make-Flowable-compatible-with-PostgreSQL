@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /flowable
+
+spring:
+  datasource:
+    driver-class-name: com.kingbase8.Driver
+    username: kingbase
+    password: kingbase
+#    url: jdbc:kingbase8://127.0.0.1:54321/kingbase?useUnicode=true&characterEncoding=UTF-8&nullCatalogMeansCurrent=true
+    url: jdbc:kingbase8://127.0.0.1:54321/ceshi?currentSchema=guns,productName=MySQL,SYS_CATALOG
+#    username: kingbase
+#    password: kingbase
+#    url: jdbc:postgresql://127.0.0.1:54321/flowable2?useUnicode=true&characterEncoding=UTF-8&nullCatalogMeansCurrent=true
+#    driver-class-name: org.postgresql.Driver
+  aop:
+    proxy-target-class: true
+#    type: com.zaxxer.hikari.HikariDataSource
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/flowable?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&allowMultiQueries=true&nullCatalogMeansCurrent=true
+#    username: root
+#    password: 123456
+flowable:
+  async-executor-activate: false
+  database-schema-update: false
+  #common:
+  #  app:
+      #idm-url: http://localhost:8080/flowable
+
